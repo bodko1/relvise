@@ -1,0 +1,110 @@
+.practice{
+  padding-top: 45px;
+}
+.practice__container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.practice__main{
+  max-width: 430px;
+  margin: 0 auto;
+}
+.practice__title{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px; /* 142.5% */
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.practice__text{
+  color: var(--second-text-color);
+  text-align: center;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+  margin-bottom: 45px;
+}
+/*cards*/
+.practice__cards{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 80px;
+}
+.practice__card-item{
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.practice__card-item-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  background-color: #FFFFFF;
+  height: 200px;
+}
+.card_photo_1{
+  height: 140px;
+  width: 100%;
+  background: url("/images/practice_1.jpg") center / cover no-repeat;
+}
+.card_photo_2{
+  height: 140px;
+  width: 100%;
+  background: url("/images/practice_2.jpg") center / cover no-repeat;
+}
+.card_photo_3{
+  height: 140px;
+  width: 100%;
+  background: url("/images/practice_3.jpg") center / cover no-repeat;
+}
+.card_photo_4{
+  height: 140px;
+  width: 100%;
+  background: url("/images/practice_4.jpg") center / cover no-repeat;
+}
+
+.practice__card-item-title{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+  margin-bottom: 15px;
+}
+
+
+.practice__card-item-text{
+  color: var(--second-text-color);
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 1024px){
+  .practice__cards{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 576px){
+  .practice__cards{
+    padding-bottom: 50px;
+
+  }
+  .practice__container{
+    padding: 0 15px;
+  }
+  .practice__card-item{
+    min-width: 260px ;
+  }
+  .practice__title{
+    font-size: 32px;
+  }
+  .practice__text{
+    margin-bottom: 30px;
+  }
+}

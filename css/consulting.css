@@ -1,0 +1,65 @@
+.consulting {
+  background: var(--light-text-color);
+  padding: 40px 0;
+
+}
+
+.consulting__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.consulting__all {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.consulting__main-info-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.1px;
+  margin-bottom: 10px;
+}
+
+.consulting__main-info-text {
+  color: var(--second-text-color);
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.consulting__secondary-info-button {
+  color: var(--light-text-color);
+  text-align: center;
+  font-weight: 700;
+  line-height: 28px; /* 200% */
+  letter-spacing: 0.2px;
+  display: flex;
+  padding: 15px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--primary-color, #FF7B47);
+  border: none;
+}
+
+/*adaptiv*/
+
+@media (max-width: 768px) {
+  .consulting__all {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .consulting__container {
+    padding: 0 15px;
+  }
+}

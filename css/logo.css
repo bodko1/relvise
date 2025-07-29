@@ -1,0 +1,122 @@
+.logo{
+  background: #FAFAFA;
+}
+.logo__container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.logo__photos{
+  display: flex;
+  justify-content: space-between;
+  gap:70px;
+  padding: 50px 0;
+}
+
+.logo__subscribe{
+  position: relative;
+  border-radius: 2px;
+  background: var(--secondary-color-2);
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  gap: 40px;
+}
+.logo__subscribe-title{
+  color: var(--light-text-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.1px;
+  max-width: 266px;
+}
+.logo__subscribe-form {
+  display: flex;
+  max-width: 567px;
+  width: 100%;
+  height: 58px;
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+  background: #F9F9F9;
+  overflow: hidden;
+}
+
+.logo__subscribe-input {
+  flex: 1;
+  outline: none;
+  padding: 20px 15px;
+  border: none;
+  background: transparent;
+  color: var(--second-text-color);
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  letter-spacing: 0.2px;
+}
+
+.logo__subscribe-button {
+  color: var(--light-text-color);
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  letter-spacing: 0.2px;
+  width: 117px;
+  height: 100%;
+  display: flex;
+  border: none;
+  background: var(--primary-color);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  flex-shrink: 0;
+}
+
+
+
+.logo__blue{
+  background: var(--dark-background-color);
+  height: 77px;
+  margin-top: -57px;
+}
+
+@media (max-width: 1024px){
+  .logo__photos{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 60px;
+  }
+  .logo__subscribe{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .logo__subscribe-form{
+    justify-content: space-between;
+  }
+  .logo__subscribe-title{
+    font-size: 20px;
+  }
+  .logo__subscribe-form{
+    max-width: 367px;
+    height: 40px;
+  }
+  .logo__subscribe-button{
+    font-size: 12px;
+    min-width: 80px;
+    line-height: normal;
+    letter-spacing: normal;
+
+  }
+  .logo__subscribe-input{
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .logo__subscribe-input{
+   max-width: 130px;
+  }
+}
